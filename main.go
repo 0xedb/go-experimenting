@@ -1,7 +1,12 @@
 package main
 
 import "fmt"
-// import "math"
+
+
+var a, b, c, d int 
+var bc int8 = 127
+var ui uint = 39
+const FACTOR = 339.82
 
 func square(a int) int {
   return a * a
