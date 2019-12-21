@@ -55,10 +55,33 @@ type Node struct {
 	data int
 	next *Node
 }
-
+ 
 var node *Node
 
 func main() {
+
+  s := make([] int, 3, 10)
+  s = append(s, 1, 10)
+  fmt.Println(s)
+  fmt.Println(cap(s), len(s))
+ 
+
+  for i := range s {
+    fmt.Println(s[i] + i)
+
+  }
+
+
+
+
+  
+
+
+
+
+
+  ////////////////////////////////////////////////////////////
+
 	// fmt.Println("Hello World")
 	// fmt.Println(square(100))
 	// fmt.Println(something_and_two("Go home today for Christmas"))
@@ -74,15 +97,15 @@ func main() {
 	// fmt.Println(b, &b)
 	// fmt.Println(Node{10, nil})
 	// talkatives[0] = 404
-  // fmt.Println(talkatives[0])
+	// fmt.Println(talkatives[0])
 
-  // names := [2]string{"bruno", "edoh"}
-  // fmt.Println(names)
+	// names := [2]string{"bruno", "edoh"}
+	// fmt.Println(names)
 
-  // many := []bool{true, false, true}
-  // fmt.Println(many)
-  // var n []int
-  // w := n == nil
-  // fmt.Println(w)
+	// many := []bool{true, false, true}
+	// fmt.Println(many)
+	// var n []int
+	// w := n == nil
+	// fmt.Println(w)
 
 }
