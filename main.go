@@ -1,8 +1,11 @@
 package main
 
 import (
-  "fmt"
-  )
+	"fmt"
+	"strings"
+
+	"golang.org/x/tour/wc"
+)
 
 var a, b, c, d int
 var bc int8 = 127
@@ -60,13 +63,32 @@ type Node struct {
 
 var node *Node
 
+func WordCount(s string) map[string]int {
+	m := make(map[string]int)
+	star := strings.Fields(s)
+	for _, val := range star {
+		v, ok := m[val]
+
+		if ok {
+			m[val] = v + 1
+		} else {
+			m[val] = 1
+		}
+	}
+
+	return m
+}
+
 func main() {
 
-  // map
-  my_map := make(map[string] int)
-  my_map["age"] = 10
-  my_map["lucky"] = 3
-  fmt.Println(my_map["age"])
+	// map finals
+	wc.Test(WordCount)
+
+	// map
+	// my_map := make(map[string] int)
+	// my_map["age"] = 10
+	// my_map["lucky"] = 3
+	// fmt.Println(my_map["age"])
 
 	// s := make([] int, 3, 10)
 	// s = append(s, 1, 10)
