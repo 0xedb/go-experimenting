@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+  "fmt"
+  )
 
 var a, b, c, d int
 var bc int8 = 127
@@ -55,32 +57,28 @@ type Node struct {
 	data int
 	next *Node
 }
- 
+
 var node *Node
 
 func main() {
 
-  s := make([] int, 3, 10)
-  s = append(s, 1, 10)
-  fmt.Println(s)
-  fmt.Println(cap(s), len(s))
- 
+  // map
+  my_map := make(map[string] int)
+  my_map["age"] = 10
+  my_map["lucky"] = 3
+  fmt.Println(my_map["age"])
 
-  for i := range s {
-    fmt.Println(s[i] + i)
+	// s := make([] int, 3, 10)
+	// s = append(s, 1, 10)
+	// fmt.Println(s)
+	// fmt.Println(cap(s), len(s))
 
-  }
+	// for w, i := range s {
+	//   fmt.Println(w, i)
 
+	// }
 
-
-
-  
-
-
-
-
-
-  ////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////
 
 	// fmt.Println("Hello World")
 	// fmt.Println(square(100))
